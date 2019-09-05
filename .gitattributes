@@ -1,1 +1,2 @@
 BD_speakTone/BDSDK/BDSClientLib/libBaiduSpeechSDK.a filter=lfs diff=lfs merge=lfs -text
+BD_speakTone/BDSDK/BDSClientLib/libBaiduSynthesisSDK.a filter=lfs diff=lfs merge=lfs -text
