@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E21F0FB32320AC4D00E811DD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FB22320AC4D00E811DD /* libsqlite3.0.tbd */; };
+		E21F0FB52320AC5500E811DD /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FB42320AC5500E811DD /* libiconv.2.4.0.tbd */; };
+		E21F0FB72320AC6600E811DD /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FB62320AC6600E811DD /* libc++.tbd */; };
+		E21F0FB92320AC6E00E811DD /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FB82320AC6E00E811DD /* libz.1.2.5.tbd */; };
+		E21F0FBB2320AC7500E811DD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FBA2320AC7500E811DD /* GLKit.framework */; };
+		E21F0FBD2320AC7C00E811DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FBC2320AC7C00E811DD /* SystemConfiguration.framework */; };
+		E21F0FBF2320AC8500E811DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FBE2320AC8500E811DD /* AudioToolbox.framework */; };
+		E21F0FC12320AC8C00E811DD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FC02320AC8C00E811DD /* AVFoundation.framework */; };
+		E21F0FC32320ACAB00E811DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FC22320ACAB00E811DD /* CFNetwork.framework */; };
+		E21F0FC52320ACB400E811DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FC42320ACB400E811DD /* CoreLocation.framework */; };
+		E21F0FC72320ACBB00E811DD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E21F0FC62320ACBB00E811DD /* CoreTelephony.framework */; };
+		E28F6E3F2320A9FA0074E8F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F6E3E2320A9FA0074E8F2 /* AppDelegate.m */; };
+		E28F6E422320A9FA0074E8F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F6E412320A9FA0074E8F2 /* ViewController.m */; };
+		E28F6E452320A9FA0074E8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E432320A9FA0074E8F2 /* Main.storyboard */; };
+		E28F6E472320AA020074E8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E462320AA020074E8F2 /* Assets.xcassets */; };
+		E28F6E4A2320AA020074E8F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E482320AA020074E8F2 /* LaunchScreen.storyboard */; };
+		E28F6E4D2320AA020074E8F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F6E4C2320AA020074E8F2 /* main.m */; };
+		E28F6E572320AA020074E8F2 /* BD_speakToneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F6E562320AA020074E8F2 /* BD_speakToneTests.m */; };
+		E28F6E622320AA020074E8F2 /* BD_speakToneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E28F6E612320AA020074E8F2 /* BD_speakToneUITests.m */; };
+		E28F6EB02320AA2C0074E8F2 /* bds_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E8B2320AA2C0074E8F2 /* bds_license.dat */; };
+		E28F6EB12320AA2D0074E8F2 /* bds_easr_basic_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E8C2320AA2C0074E8F2 /* bds_easr_basic_model.dat */; };
+		E28F6EB22320AA2D0074E8F2 /* bds_easr_mfe_cmvn.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E8D2320AA2C0074E8F2 /* bds_easr_mfe_cmvn.dat */; };
+		E28F6EB32320AA2D0074E8F2 /* baidu_speech_grammar.bsg in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E8E2320AA2C0074E8F2 /* baidu_speech_grammar.bsg */; };
+		E28F6EB42320AA2D0074E8F2 /* bds_easr_input_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E8F2320AA2C0074E8F2 /* bds_easr_input_model.dat */; };
+		E28F6EB52320AA2D0074E8F2 /* bds_easr_mfe_dnn.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E902320AA2C0074E8F2 /* bds_easr_mfe_dnn.dat */; };
+		E28F6EB62320AA2D0074E8F2 /* bds_easr_gramm.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E912320AA2C0074E8F2 /* bds_easr_gramm.dat */; };
+		E28F6EB72320AA2D0074E8F2 /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E922320AA2C0074E8F2 /* bds_easr_wakeup_words.dat */; };
+		E28F6EB82320AA2D0074E8F2 /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E932320AA2C0074E8F2 /* bds_easr_dnn_wakeup_model.dat */; };
+		E28F6EB92320AA2D0074E8F2 /* record_end.caf in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E962320AA2C0074E8F2 /* record_end.caf */; };
+		E28F6EBA2320AA2D0074E8F2 /* record_start.caf in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E972320AA2C0074E8F2 /* record_start.caf */; };
+		E28F6EBB2320AA2D0074E8F2 /* record_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E982320AA2C0074E8F2 /* record_cancel.caf */; };
+		E28F6EBC2320AA2D0074E8F2 /* record_success.caf in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E992320AA2C0074E8F2 /* record_success.caf */; };
+		E28F6EBD2320AA2D0074E8F2 /* record_fail.caf in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E9A2320AA2C0074E8F2 /* record_fail.caf */; };
+		E28F6EBE2320AA2D0074E8F2 /* lightBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E9C2320AA2C0074E8F2 /* lightBlue.bundle */; };
+		E28F6EBF2320AA2D0074E8F2 /* lightOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E9D2320AA2C0074E8F2 /* lightOrange.bundle */; };
+		E28F6EC02320AA2D0074E8F2 /* darkRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E9E2320AA2C0074E8F2 /* darkRed.bundle */; };
+		E28F6EC12320AA2D0074E8F2 /* defaultTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6E9F2320AA2C0074E8F2 /* defaultTheme.bundle */; };
+		E28F6EC22320AA2D0074E8F2 /* lightGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA02320AA2C0074E8F2 /* lightGreen.bundle */; };
+		E28F6EC32320AA2D0074E8F2 /* darkOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA12320AA2C0074E8F2 /* darkOrange.bundle */; };
+		E28F6EC42320AA2D0074E8F2 /* defaultFullScreenTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA22320AA2C0074E8F2 /* defaultFullScreenTheme.bundle */; };
+		E28F6EC52320AA2D0074E8F2 /* darkGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA32320AA2C0074E8F2 /* darkGreen.bundle */; };
+		E28F6EC62320AA2D0074E8F2 /* lightRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA42320AA2C0074E8F2 /* lightRed.bundle */; };
+		E28F6EC72320AA2D0074E8F2 /* darkBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA52320AA2C0074E8F2 /* darkBlue.bundle */; };
+		E28F6EC82320AA2D0074E8F2 /* Chinese_And_English_Text.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA72320AA2C0074E8F2 /* Chinese_And_English_Text.dat */; };
+		E28F6EC92320AA2D0074E8F2 /* Chinese_And_English_Speech_DYY.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA82320AA2C0074E8F2 /* Chinese_And_English_Speech_DYY.dat */; };
+		E28F6ECA2320AA2D0074E8F2 /* Chinese_And_English_Speech_Male-yyjw.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EA92320AA2C0074E8F2 /* Chinese_And_English_Speech_Male-yyjw.dat */; };
+		E28F6ECB2320AA2D0074E8F2 /* Chinese_And_English_Speech_Male.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EAA2320AA2C0074E8F2 /* Chinese_And_English_Speech_Male.dat */; };
+		E28F6ECC2320AA2D0074E8F2 /* Chinese_And_English_Speech_Female.dat in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EAB2320AA2C0074E8F2 /* Chinese_And_English_Speech_Female.dat */; };
+		E28F6ECD2320AA2D0074E8F2 /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E28F6EAD2320AA2C0074E8F2 /* libBaiduSpeechSDK.a */; };
+		E28F6ECE2320AA2D0074E8F2 /* WakeUp.bin in Resources */ = {isa = PBXBuildFile; fileRef = E28F6EAE2320AA2C0074E8F2 /* WakeUp.bin */; };
+		E28F6ECF2320AA2D0074E8F2 /* libBaiduSynthesisSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E28F6EAF2320AA2C0074E8F2 /* libBaiduSynthesisSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E28F6E532320AA020074E8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F6E322320A9FA0074E8F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F6E392320A9FA0074E8F2;
+			remoteInfo = BD_speakTone;
+		};
+		E28F6E5E2320AA020074E8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F6E322320A9FA0074E8F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F6E392320A9FA0074E8F2;
+			remoteInfo = BD_speakTone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E21F0FB22320AC4D00E811DD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		E21F0FB42320AC5500E811DD /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		E21F0FB62320AC6600E811DD /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E21F0FB82320AC6E00E811DD /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		E21F0FBA2320AC7500E811DD /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E21F0FBC2320AC7C00E811DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E21F0FBE2320AC8500E811DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E21F0FC02320AC8C00E811DD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E21F0FC22320ACAB00E811DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E21F0FC42320ACB400E811DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E21F0FC62320ACBB00E811DD /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		E28F6E3A2320A9FA0074E8F2 /* BD_speakTone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BD_speakTone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F6E3D2320A9FA0074E8F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E28F6E3E2320A9FA0074E8F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E28F6E402320A9FA0074E8F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E28F6E412320A9FA0074E8F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E28F6E442320A9FA0074E8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E28F6E462320AA020074E8F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E28F6E492320AA020074E8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E28F6E4B2320AA020074E8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28F6E4C2320AA020074E8F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E28F6E522320AA020074E8F2 /* BD_speakToneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BD_speakToneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F6E562320AA020074E8F2 /* BD_speakToneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BD_speakToneTests.m; sourceTree = "<group>"; };
+		E28F6E582320AA020074E8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28F6E5D2320AA020074E8F2 /* BD_speakToneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BD_speakToneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F6E612320AA020074E8F2 /* BD_speakToneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BD_speakToneUITests.m; sourceTree = "<group>"; };
+		E28F6E632320AA020074E8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28F6E722320AA2C0074E8F2 /* BDSWakeupParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSWakeupParameters.h; sourceTree = "<group>"; };
+		E28F6E732320AA2C0074E8F2 /* BDSASRParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRParameters.h; sourceTree = "<group>"; };
+		E28F6E742320AA2C0074E8F2 /* BDSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSEventManager.h; sourceTree = "<group>"; };
+		E28F6E752320AA2C0074E8F2 /* BDSUploaderDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSUploaderDefines.h; sourceTree = "<group>"; };
+		E28F6E762320AA2C0074E8F2 /* BDSASRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRDefines.h; sourceTree = "<group>"; };
+		E28F6E772320AA2C0074E8F2 /* BDSUploaderParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSUploaderParameters.h; sourceTree = "<group>"; };
+		E28F6E782320AA2C0074E8F2 /* BDSWakeupDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSWakeupDefines.h; sourceTree = "<group>"; };
+		E28F6E7A2320AA2C0074E8F2 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		E28F6E7B2320AA2C0074E8F2 /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		E28F6E7C2320AA2C0074E8F2 /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		E28F6E7D2320AA2C0074E8F2 /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		E28F6E7F2320AA2C0074E8F2 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		E28F6E802320AA2C0074E8F2 /* BDS_EttsModelManagerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDS_EttsModelManagerInterface.h; sourceTree = "<group>"; };
+		E28F6E812320AA2C0074E8F2 /* BDSBuiltInPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSBuiltInPlayer.h; sourceTree = "<group>"; };
+		E28F6E822320AA2C0074E8F2 /* BDSMixedModeSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSMixedModeSynthesizer.h; sourceTree = "<group>"; };
+		E28F6E832320AA2C0074E8F2 /* BDSSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizer.h; sourceTree = "<group>"; };
+		E28F6E842320AA2C0074E8F2 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
+		E28F6E852320AA2C0074E8F2 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+		E28F6E862320AA2C0074E8F2 /* BDSTTSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSTTSEventManager.h; sourceTree = "<group>"; };
+		E28F6E872320AA2C0074E8F2 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
+		E28F6E8B2320AA2C0074E8F2 /* bds_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_license.dat; sourceTree = "<group>"; };
+		E28F6E8C2320AA2C0074E8F2 /* bds_easr_basic_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_basic_model.dat; sourceTree = "<group>"; };
+		E28F6E8D2320AA2C0074E8F2 /* bds_easr_mfe_cmvn.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_mfe_cmvn.dat; sourceTree = "<group>"; };
+		E28F6E8E2320AA2C0074E8F2 /* baidu_speech_grammar.bsg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = baidu_speech_grammar.bsg; sourceTree = "<group>"; };
+		E28F6E8F2320AA2C0074E8F2 /* bds_easr_input_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_input_model.dat; sourceTree = "<group>"; };
+		E28F6E902320AA2C0074E8F2 /* bds_easr_mfe_dnn.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_mfe_dnn.dat; sourceTree = "<group>"; };
+		E28F6E912320AA2C0074E8F2 /* bds_easr_gramm.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_gramm.dat; sourceTree = "<group>"; };
+		E28F6E922320AA2C0074E8F2 /* bds_easr_wakeup_words.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_wakeup_words.dat; sourceTree = "<group>"; };
+		E28F6E932320AA2C0074E8F2 /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
+		E28F6E962320AA2C0074E8F2 /* record_end.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_end.caf; sourceTree = "<group>"; };
+		E28F6E972320AA2C0074E8F2 /* record_start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_start.caf; sourceTree = "<group>"; };
+		E28F6E982320AA2C0074E8F2 /* record_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_cancel.caf; sourceTree = "<group>"; };
+		E28F6E992320AA2C0074E8F2 /* record_success.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_success.caf; sourceTree = "<group>"; };
+		E28F6E9A2320AA2C0074E8F2 /* record_fail.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_fail.caf; sourceTree = "<group>"; };
+		E28F6E9C2320AA2C0074E8F2 /* lightBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightBlue.bundle; sourceTree = "<group>"; };
+		E28F6E9D2320AA2C0074E8F2 /* lightOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightOrange.bundle; sourceTree = "<group>"; };
+		E28F6E9E2320AA2C0074E8F2 /* darkRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkRed.bundle; sourceTree = "<group>"; };
+		E28F6E9F2320AA2C0074E8F2 /* defaultTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultTheme.bundle; sourceTree = "<group>"; };
+		E28F6EA02320AA2C0074E8F2 /* lightGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightGreen.bundle; sourceTree = "<group>"; };
+		E28F6EA12320AA2C0074E8F2 /* darkOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkOrange.bundle; sourceTree = "<group>"; };
+		E28F6EA22320AA2C0074E8F2 /* defaultFullScreenTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultFullScreenTheme.bundle; sourceTree = "<group>"; };
+		E28F6EA32320AA2C0074E8F2 /* darkGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkGreen.bundle; sourceTree = "<group>"; };
+		E28F6EA42320AA2C0074E8F2 /* lightRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightRed.bundle; sourceTree = "<group>"; };
+		E28F6EA52320AA2C0074E8F2 /* darkBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkBlue.bundle; sourceTree = "<group>"; };
+		E28F6EA72320AA2C0074E8F2 /* Chinese_And_English_Text.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_And_English_Text.dat; sourceTree = "<group>"; };
+		E28F6EA82320AA2C0074E8F2 /* Chinese_And_English_Speech_DYY.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_And_English_Speech_DYY.dat; sourceTree = "<group>"; };
+		E28F6EA92320AA2C0074E8F2 /* Chinese_And_English_Speech_Male-yyjw.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chinese_And_English_Speech_Male-yyjw.dat"; sourceTree = "<group>"; };
+		E28F6EAA2320AA2C0074E8F2 /* Chinese_And_English_Speech_Male.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_And_English_Speech_Male.dat; sourceTree = "<group>"; };
+		E28F6EAB2320AA2C0074E8F2 /* Chinese_And_English_Speech_Female.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_And_English_Speech_Female.dat; sourceTree = "<group>"; };
+		E28F6EAD2320AA2C0074E8F2 /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
+		E28F6EAE2320AA2C0074E8F2 /* WakeUp.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = WakeUp.bin; sourceTree = "<group>"; };
+		E28F6EAF2320AA2C0074E8F2 /* libBaiduSynthesisSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSynthesisSDK.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E28F6E372320A9FA0074E8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21F0FC72320ACBB00E811DD /* CoreTelephony.framework in Frameworks */,
+				E21F0FC52320ACB400E811DD /* CoreLocation.framework in Frameworks */,
+				E21F0FC32320ACAB00E811DD /* CFNetwork.framework in Frameworks */,
+				E21F0FC12320AC8C00E811DD /* AVFoundation.framework in Frameworks */,
+				E21F0FBF2320AC8500E811DD /* AudioToolbox.framework in Frameworks */,
+				E21F0FBD2320AC7C00E811DD /* SystemConfiguration.framework in Frameworks */,
+				E21F0FBB2320AC7500E811DD /* GLKit.framework in Frameworks */,
+				E21F0FB92320AC6E00E811DD /* libz.1.2.5.tbd in Frameworks */,
+				E21F0FB72320AC6600E811DD /* libc++.tbd in Frameworks */,
+				E21F0FB52320AC5500E811DD /* libiconv.2.4.0.tbd in Frameworks */,
+				E21F0FB32320AC4D00E811DD /* libsqlite3.0.tbd in Frameworks */,
+				E28F6ECD2320AA2D0074E8F2 /* libBaiduSpeechSDK.a in Frameworks */,
+				E28F6ECF2320AA2D0074E8F2 /* libBaiduSynthesisSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E4F2320AA020074E8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E5A2320AA020074E8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E21F0FB12320AC4C00E811DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E21F0FC62320ACBB00E811DD /* CoreTelephony.framework */,
+				E21F0FC42320ACB400E811DD /* CoreLocation.framework */,
+				E21F0FC22320ACAB00E811DD /* CFNetwork.framework */,
+				E21F0FC02320AC8C00E811DD /* AVFoundation.framework */,
+				E21F0FBE2320AC8500E811DD /* AudioToolbox.framework */,
+				E21F0FBC2320AC7C00E811DD /* SystemConfiguration.framework */,
+				E21F0FBA2320AC7500E811DD /* GLKit.framework */,
+				E21F0FB82320AC6E00E811DD /* libz.1.2.5.tbd */,
+				E21F0FB62320AC6600E811DD /* libc++.tbd */,
+				E21F0FB42320AC5500E811DD /* libiconv.2.4.0.tbd */,
+				E21F0FB22320AC4D00E811DD /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E28F6E312320A9FA0074E8F2 = {
+			isa = PBXGroup;
+			children = (
+				E28F6E3C2320A9FA0074E8F2 /* BD_speakTone */,
+				E28F6E552320AA020074E8F2 /* BD_speakToneTests */,
+				E28F6E602320AA020074E8F2 /* BD_speakToneUITests */,
+				E28F6E3B2320A9FA0074E8F2 /* Products */,
+				E21F0FB12320AC4C00E811DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E28F6E3B2320A9FA0074E8F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E3A2320A9FA0074E8F2 /* BD_speakTone.app */,
+				E28F6E522320AA020074E8F2 /* BD_speakToneTests.xctest */,
+				E28F6E5D2320AA020074E8F2 /* BD_speakToneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E28F6E3C2320A9FA0074E8F2 /* BD_speakTone */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E3D2320A9FA0074E8F2 /* AppDelegate.h */,
+				E28F6E3E2320A9FA0074E8F2 /* AppDelegate.m */,
+				E28F6E402320A9FA0074E8F2 /* ViewController.h */,
+				E28F6E412320A9FA0074E8F2 /* ViewController.m */,
+				E28F6E432320A9FA0074E8F2 /* Main.storyboard */,
+				E28F6E462320AA020074E8F2 /* Assets.xcassets */,
+				E28F6E482320AA020074E8F2 /* LaunchScreen.storyboard */,
+				E28F6E4B2320AA020074E8F2 /* Info.plist */,
+				E28F6E4C2320AA020074E8F2 /* main.m */,
+				E28F6E6F2320AA2C0074E8F2 /* BDSDK */,
+			);
+			path = BD_speakTone;
+			sourceTree = "<group>";
+		};
+		E28F6E552320AA020074E8F2 /* BD_speakToneTests */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E562320AA020074E8F2 /* BD_speakToneTests.m */,
+				E28F6E582320AA020074E8F2 /* Info.plist */,
+			);
+			path = BD_speakToneTests;
+			sourceTree = "<group>";
+		};
+		E28F6E602320AA020074E8F2 /* BD_speakToneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E612320AA020074E8F2 /* BD_speakToneUITests.m */,
+				E28F6E632320AA020074E8F2 /* Info.plist */,
+			);
+			path = BD_speakToneUITests;
+			sourceTree = "<group>";
+		};
+		E28F6E6F2320AA2C0074E8F2 /* BDSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E702320AA2C0074E8F2 /* BDSClientHeaders */,
+				E28F6E882320AA2C0074E8F2 /* BDSClientResource */,
+				E28F6EAC2320AA2C0074E8F2 /* BDSClientLib */,
+			);
+			path = BDSDK;
+			sourceTree = "<group>";
+		};
+		E28F6E702320AA2C0074E8F2 /* BDSClientHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E712320AA2C0074E8F2 /* ASR */,
+				E28F6E7E2320AA2C0074E8F2 /* TTS */,
+			);
+			path = BDSClientHeaders;
+			sourceTree = "<group>";
+		};
+		E28F6E712320AA2C0074E8F2 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E722320AA2C0074E8F2 /* BDSWakeupParameters.h */,
+				E28F6E732320AA2C0074E8F2 /* BDSASRParameters.h */,
+				E28F6E742320AA2C0074E8F2 /* BDSEventManager.h */,
+				E28F6E752320AA2C0074E8F2 /* BDSUploaderDefines.h */,
+				E28F6E762320AA2C0074E8F2 /* BDSASRDefines.h */,
+				E28F6E772320AA2C0074E8F2 /* BDSUploaderParameters.h */,
+				E28F6E782320AA2C0074E8F2 /* BDSWakeupDefines.h */,
+				E28F6E792320AA2C0074E8F2 /* UIHeaders */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		E28F6E792320AA2C0074E8F2 /* UIHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E7A2320AA2C0074E8F2 /* BDRecognizerViewParamsObject.h */,
+				E28F6E7B2320AA2C0074E8F2 /* BDRecognizerViewController.h */,
+				E28F6E7C2320AA2C0074E8F2 /* BDTheme.h */,
+				E28F6E7D2320AA2C0074E8F2 /* BDRecognizerViewDelegate.h */,
+			);
+			path = UIHeaders;
+			sourceTree = "<group>";
+		};
+		E28F6E7E2320AA2C0074E8F2 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E7F2320AA2C0074E8F2 /* BDSSpeechSynthesizerDelegate.h */,
+				E28F6E802320AA2C0074E8F2 /* BDS_EttsModelManagerInterface.h */,
+				E28F6E812320AA2C0074E8F2 /* BDSBuiltInPlayer.h */,
+				E28F6E822320AA2C0074E8F2 /* BDSMixedModeSynthesizer.h */,
+				E28F6E832320AA2C0074E8F2 /* BDSSpeechSynthesizer.h */,
+				E28F6E842320AA2C0074E8F2 /* BDSSpeechSynthesizerParams.h */,
+				E28F6E852320AA2C0074E8F2 /* BDSSynthesizerLogLevel.h */,
+				E28F6E862320AA2C0074E8F2 /* BDSTTSEventManager.h */,
+				E28F6E872320AA2C0074E8F2 /* BDSSpeechSynthesizerErrors.h */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		E28F6E882320AA2C0074E8F2 /* BDSClientResource */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E892320AA2C0074E8F2 /* ASR */,
+				E28F6EA62320AA2C0074E8F2 /* TTS */,
+			);
+			path = BDSClientResource;
+			sourceTree = "<group>";
+		};
+		E28F6E892320AA2C0074E8F2 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E8A2320AA2C0074E8F2 /* BDSClientEASRResources */,
+				E28F6E942320AA2C0074E8F2 /* BDSClientResources */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		E28F6E8A2320AA2C0074E8F2 /* BDSClientEASRResources */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E8B2320AA2C0074E8F2 /* bds_license.dat */,
+				E28F6E8C2320AA2C0074E8F2 /* bds_easr_basic_model.dat */,
+				E28F6E8D2320AA2C0074E8F2 /* bds_easr_mfe_cmvn.dat */,
+				E28F6E8E2320AA2C0074E8F2 /* baidu_speech_grammar.bsg */,
+				E28F6E8F2320AA2C0074E8F2 /* bds_easr_input_model.dat */,
+				E28F6E902320AA2C0074E8F2 /* bds_easr_mfe_dnn.dat */,
+				E28F6E912320AA2C0074E8F2 /* bds_easr_gramm.dat */,
+				E28F6E922320AA2C0074E8F2 /* bds_easr_wakeup_words.dat */,
+				E28F6E932320AA2C0074E8F2 /* bds_easr_dnn_wakeup_model.dat */,
+			);
+			path = BDSClientEASRResources;
+			sourceTree = "<group>";
+		};
+		E28F6E942320AA2C0074E8F2 /* BDSClientResources */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E952320AA2C0074E8F2 /* Tone */,
+				E28F6E9B2320AA2C0074E8F2 /* Theme */,
+			);
+			path = BDSClientResources;
+			sourceTree = "<group>";
+		};
+		E28F6E952320AA2C0074E8F2 /* Tone */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E962320AA2C0074E8F2 /* record_end.caf */,
+				E28F6E972320AA2C0074E8F2 /* record_start.caf */,
+				E28F6E982320AA2C0074E8F2 /* record_cancel.caf */,
+				E28F6E992320AA2C0074E8F2 /* record_success.caf */,
+				E28F6E9A2320AA2C0074E8F2 /* record_fail.caf */,
+			);
+			path = Tone;
+			sourceTree = "<group>";
+		};
+		E28F6E9B2320AA2C0074E8F2 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6E9C2320AA2C0074E8F2 /* lightBlue.bundle */,
+				E28F6E9D2320AA2C0074E8F2 /* lightOrange.bundle */,
+				E28F6E9E2320AA2C0074E8F2 /* darkRed.bundle */,
+				E28F6E9F2320AA2C0074E8F2 /* defaultTheme.bundle */,
+				E28F6EA02320AA2C0074E8F2 /* lightGreen.bundle */,
+				E28F6EA12320AA2C0074E8F2 /* darkOrange.bundle */,
+				E28F6EA22320AA2C0074E8F2 /* defaultFullScreenTheme.bundle */,
+				E28F6EA32320AA2C0074E8F2 /* darkGreen.bundle */,
+				E28F6EA42320AA2C0074E8F2 /* lightRed.bundle */,
+				E28F6EA52320AA2C0074E8F2 /* darkBlue.bundle */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E28F6EA62320AA2C0074E8F2 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6EA72320AA2C0074E8F2 /* Chinese_And_English_Text.dat */,
+				E28F6EA82320AA2C0074E8F2 /* Chinese_And_English_Speech_DYY.dat */,
+				E28F6EA92320AA2C0074E8F2 /* Chinese_And_English_Speech_Male-yyjw.dat */,
+				E28F6EAA2320AA2C0074E8F2 /* Chinese_And_English_Speech_Male.dat */,
+				E28F6EAB2320AA2C0074E8F2 /* Chinese_And_English_Speech_Female.dat */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		E28F6EAC2320AA2C0074E8F2 /* BDSClientLib */ = {
+			isa = PBXGroup;
+			children = (
+				E28F6EAD2320AA2C0074E8F2 /* libBaiduSpeechSDK.a */,
+				E28F6EAE2320AA2C0074E8F2 /* WakeUp.bin */,
+				E28F6EAF2320AA2C0074E8F2 /* libBaiduSynthesisSDK.a */,
+			);
+			path = BDSClientLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E28F6E392320A9FA0074E8F2 /* BD_speakTone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F6E662320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakTone" */;
+			buildPhases = (
+				E28F6E362320A9FA0074E8F2 /* Sources */,
+				E28F6E372320A9FA0074E8F2 /* Frameworks */,
+				E28F6E382320A9FA0074E8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BD_speakTone;
+			productName = BD_speakTone;
+			productReference = E28F6E3A2320A9FA0074E8F2 /* BD_speakTone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E28F6E512320AA020074E8F2 /* BD_speakToneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F6E692320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakToneTests" */;
+			buildPhases = (
+				E28F6E4E2320AA020074E8F2 /* Sources */,
+				E28F6E4F2320AA020074E8F2 /* Frameworks */,
+				E28F6E502320AA020074E8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F6E542320AA020074E8F2 /* PBXTargetDependency */,
+			);
+			name = BD_speakToneTests;
+			productName = BD_speakToneTests;
+			productReference = E28F6E522320AA020074E8F2 /* BD_speakToneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E28F6E5C2320AA020074E8F2 /* BD_speakToneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F6E6C2320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakToneUITests" */;
+			buildPhases = (
+				E28F6E592320AA020074E8F2 /* Sources */,
+				E28F6E5A2320AA020074E8F2 /* Frameworks */,
+				E28F6E5B2320AA020074E8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F6E5F2320AA020074E8F2 /* PBXTargetDependency */,
+			);
+			name = BD_speakToneUITests;
+			productName = BD_speakToneUITests;
+			productReference = E28F6E5D2320AA020074E8F2 /* BD_speakToneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E28F6E322320A9FA0074E8F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Safio Wan";
+				TargetAttributes = {
+					E28F6E392320A9FA0074E8F2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E28F6E512320AA020074E8F2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E28F6E392320A9FA0074E8F2;
+					};
+					E28F6E5C2320AA020074E8F2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = E28F6E392320A9FA0074E8F2;
+					};
+				};
+			};
+			buildConfigurationList = E28F6E352320A9FA0074E8F2 /* Build configuration list for PBXProject "BD_speakTone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E28F6E312320A9FA0074E8F2;
+			productRefGroup = E28F6E3B2320A9FA0074E8F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E28F6E392320A9FA0074E8F2 /* BD_speakTone */,
+				E28F6E512320AA020074E8F2 /* BD_speakToneTests */,
+				E28F6E5C2320AA020074E8F2 /* BD_speakToneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28F6E382320A9FA0074E8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F6EC62320AA2D0074E8F2 /* lightRed.bundle in Resources */,
+				E28F6EC42320AA2D0074E8F2 /* defaultFullScreenTheme.bundle in Resources */,
+				E28F6EBD2320AA2D0074E8F2 /* record_fail.caf in Resources */,
+				E28F6EB12320AA2D0074E8F2 /* bds_easr_basic_model.dat in Resources */,
+				E28F6EBC2320AA2D0074E8F2 /* record_success.caf in Resources */,
+				E28F6EC72320AA2D0074E8F2 /* darkBlue.bundle in Resources */,
+				E28F6ECC2320AA2D0074E8F2 /* Chinese_And_English_Speech_Female.dat in Resources */,
+				E28F6EC02320AA2D0074E8F2 /* darkRed.bundle in Resources */,
+				E28F6EC32320AA2D0074E8F2 /* darkOrange.bundle in Resources */,
+				E28F6ECA2320AA2D0074E8F2 /* Chinese_And_English_Speech_Male-yyjw.dat in Resources */,
+				E28F6EB42320AA2D0074E8F2 /* bds_easr_input_model.dat in Resources */,
+				E28F6EC82320AA2D0074E8F2 /* Chinese_And_English_Text.dat in Resources */,
+				E28F6EBE2320AA2D0074E8F2 /* lightBlue.bundle in Resources */,
+				E28F6EC52320AA2D0074E8F2 /* darkGreen.bundle in Resources */,
+				E28F6EC22320AA2D0074E8F2 /* lightGreen.bundle in Resources */,
+				E28F6EC92320AA2D0074E8F2 /* Chinese_And_English_Speech_DYY.dat in Resources */,
+				E28F6EB82320AA2D0074E8F2 /* bds_easr_dnn_wakeup_model.dat in Resources */,
+				E28F6E4A2320AA020074E8F2 /* LaunchScreen.storyboard in Resources */,
+				E28F6EBA2320AA2D0074E8F2 /* record_start.caf in Resources */,
+				E28F6EBF2320AA2D0074E8F2 /* lightOrange.bundle in Resources */,
+				E28F6EB62320AA2D0074E8F2 /* bds_easr_gramm.dat in Resources */,
+				E28F6EC12320AA2D0074E8F2 /* defaultTheme.bundle in Resources */,
+				E28F6ECE2320AA2D0074E8F2 /* WakeUp.bin in Resources */,
+				E28F6EB52320AA2D0074E8F2 /* bds_easr_mfe_dnn.dat in Resources */,
+				E28F6EB02320AA2C0074E8F2 /* bds_license.dat in Resources */,
+				E28F6EBB2320AA2D0074E8F2 /* record_cancel.caf in Resources */,
+				E28F6E472320AA020074E8F2 /* Assets.xcassets in Resources */,
+				E28F6ECB2320AA2D0074E8F2 /* Chinese_And_English_Speech_Male.dat in Resources */,
+				E28F6EB92320AA2D0074E8F2 /* record_end.caf in Resources */,
+				E28F6EB72320AA2D0074E8F2 /* bds_easr_wakeup_words.dat in Resources */,
+				E28F6EB32320AA2D0074E8F2 /* baidu_speech_grammar.bsg in Resources */,
+				E28F6E452320A9FA0074E8F2 /* Main.storyboard in Resources */,
+				E28F6EB22320AA2D0074E8F2 /* bds_easr_mfe_cmvn.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E502320AA020074E8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E5B2320AA020074E8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E28F6E362320A9FA0074E8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F6E422320A9FA0074E8F2 /* ViewController.m in Sources */,
+				E28F6E4D2320AA020074E8F2 /* main.m in Sources */,
+				E28F6E3F2320A9FA0074E8F2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E4E2320AA020074E8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F6E572320AA020074E8F2 /* BD_speakToneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F6E592320AA020074E8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F6E622320AA020074E8F2 /* BD_speakToneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E28F6E542320AA020074E8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F6E392320A9FA0074E8F2 /* BD_speakTone */;
+			targetProxy = E28F6E532320AA020074E8F2 /* PBXContainerItemProxy */;
+		};
+		E28F6E5F2320AA020074E8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F6E392320A9FA0074E8F2 /* BD_speakTone */;
+			targetProxy = E28F6E5E2320AA020074E8F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E28F6E432320A9FA0074E8F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28F6E442320A9FA0074E8F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E28F6E482320AA020074E8F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28F6E492320AA020074E8F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E28F6E642320AA020074E8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E28F6E652320AA020074E8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E28F6E672320AA020074E8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BD_speakTone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BD_speakTone/BDSDK/BDSClientLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdSpeakTone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E28F6E682320AA020074E8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BD_speakTone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BD_speakTone/BDSDK/BDSClientLib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bdSpeakTone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E28F6E6A2320AA020074E8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2527M59B66;
+				INFOPLIST_FILE = BD_speakToneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safio.BD-speakToneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BD_speakTone.app/BD_speakTone";
+			};
+			name = Debug;
+		};
+		E28F6E6B2320AA020074E8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2527M59B66;
+				INFOPLIST_FILE = BD_speakToneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safio.BD-speakToneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BD_speakTone.app/BD_speakTone";
+			};
+			name = Release;
+		};
+		E28F6E6D2320AA020074E8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2527M59B66;
+				INFOPLIST_FILE = BD_speakToneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safio.BD-speakToneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BD_speakTone;
+			};
+			name = Debug;
+		};
+		E28F6E6E2320AA020074E8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2527M59B66;
+				INFOPLIST_FILE = BD_speakToneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Safio.BD-speakToneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BD_speakTone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E28F6E352320A9FA0074E8F2 /* Build configuration list for PBXProject "BD_speakTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F6E642320AA020074E8F2 /* Debug */,
+				E28F6E652320AA020074E8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F6E662320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakTone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F6E672320AA020074E8F2 /* Debug */,
+				E28F6E682320AA020074E8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F6E692320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakToneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F6E6A2320AA020074E8F2 /* Debug */,
+				E28F6E6B2320AA020074E8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F6E6C2320AA020074E8F2 /* Build configuration list for PBXNativeTarget "BD_speakToneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F6E6D2320AA020074E8F2 /* Debug */,
+				E28F6E6E2320AA020074E8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E28F6E322320A9FA0074E8F2 /* Project object */;
+}
